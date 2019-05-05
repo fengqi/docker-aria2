@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:edge
 
 RUN apk update && \
 	mkdir -p /app/conf && \
@@ -16,3 +16,4 @@ VOLUME ["/app/data", "/app/conf"]
 EXPOSE 6800
 
 CMD ["/app/run.sh"]
+
